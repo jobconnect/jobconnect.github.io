@@ -1,0 +1,20 @@
+/* Begin hello page */
+div.landing-page {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/bg-home.jpg")
+}
+
+div.landing-page #form-submit {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* End hello page */
