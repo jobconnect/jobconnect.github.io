@@ -1,3 +1,21 @@
+body{
+    margin: 0 !important;
+}
+
+/* Dropdown menu */
+
+div.nav-dropdown{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    z-index: 99999;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* End Dropdown menu */
+
 /* Begin hello page */
 div.landing-page {
     overflow-x: hidden;
@@ -28,3 +46,10 @@ div.landing-page #form-submit button:hover{
     
 }
 /* End hello page */
+
+#user-name{
+    text-transform: uppercase; 
+    text-decoration: underline;
+    font-weight: bold;
+    color: #deceff;
+}
