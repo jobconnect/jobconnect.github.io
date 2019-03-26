@@ -53,3 +53,28 @@ div.landing-page #form-submit button:hover{
     font-weight: bold;
     color: #deceff;
 }
+
+div.card-jobs{
+    padding: 8px;
+    margin: 16px;
+}
+
+div.job-tags span{
+    padding: 10px;
+    border: 1px solid gray;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+div.job-tags span:hover{
+    background-color: #157efb;
+    color: #fff;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+/* nav tabs */
+ul.job-nav-tabs li.nav-item a.nav-link{
+    border: 0;
+    
+}
