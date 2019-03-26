@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JobPortal - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="Jquery/jquery.validate.min.js">
+  
+    
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <!--css phan dang nhap and dang ký ..........................................................-->
+  <body>
+      <style  >
+          body1 {font-family: Arial, Helvetica, sans-serif;}
+          
+          .search-widget{
+            
+            width:500px;
+            height:20px;
+            }
+          
+          /* Full-width input fields */
+          textarea[type=text]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          
+          }
+          input[type=date]{
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          
+
+          }
+          input[type=text], input[type=password],input[type=email]  {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          }
+          
+          /* Set a style for all buttons */
+          #submit,#submit1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: -100%;
+          }
+          #reset,#reset1{
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: -100%;
+          }
+          
+          button:hover {
+            opacity: 0.8;
+          }
+          
+          /* Extra styles for the cancel button */
+          .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+          }
+          
+          /* Center the image and position the close button */
+          .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+          }
+          
+          img.avatar {
+            width: 40%;
+            border-radius: 50%;
+          }
+          
+          .container {
+            padding: 16px;
+          }
+         
+        
+          span.psw.mail.Address {
+            float: right;
+            padding-top: 16px;
+          }
+          
+          /* The Modal (background) */
+          .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+          }
+          
+          /* Modal Content/Box */
+          .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+          }
+          
+          /* The Close Button (x) */
+          .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+          }
+          
+          .close:hover,
+          .close:focus {
+            color: red;
+            cursor: pointer;
+          }
+          
+          /* Add Zoom Animation */
+          .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+          }
+          
+          @-webkit-keyframes animatezoom {
+            from {-webkit-transform: scale(0)} 
+            to {-webkit-transform: scale(1)}
+          }
+            
+          @keyframes animatezoom {
+            from {transform: scale(0)} 
+            to {transform: scale(1)}
+          }
+          
+          /* Change styles for span and cancel button on extra small screens */
+          @media screen and (max-width: 300px) {
+            span.psw.mail.Address {
+               display: block;
+               float: none;
+            }
+            .cancelbtn {
+               width: 100%;
+            }
+          }
+          </style>
+          
+          
+          
+    <body1> 
+         <!--phần đăng nhập (locing) -->
+      
+      <div id="id01" class="modal">
+  
+          <form class="modal-content animate" id="fromdangnhap" name="dn"  action="ungtuyen.html" novalidate >
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h3 alt="Avatar " class="avatar"><b>log in</b></h3>
+            </div>
+            <div class="container">
+              <label for="uname"><b>Username</b></label><br/>
+              <input type="text" class="form-control is-valid" placeholder="Enter Username" name="uname" > <br/>
+        
+              <label for="psw"><b>Password</b></label><br/>
+              <input type="password" class="form-control is-valid" placeholder="Enter Password" name="psw" ><br/>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label> <br/>
+              <button id="submit" type="submit" onclick="dangnhap ()">Login</button>
+              <button id="reset" type="reset">Reset</button>
+              
+            </div>
+        
+            <div class="container" style="background-color:"#000">
+              
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal 
+        
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        <!--phan dang ký -->
+        <div id="id02" class="modal">
+  
+            <form class="modal-content animate" action="home.html">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h3 alt="Avatar " class="avatar"><b>Participation</b></h3>
+               
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label><br/>
+                <input type="text" class="form-control is-valid" placeholder="Enter Username" name="uname" required> <br/>
+          
+                <label for="psw"><b>Password</b></label><br/>
+                <input type="password" class="form-control is-valid" placeholder="Enter Password" name="psw" required><br/>
+                <label for="mail"><b>Mail</b></label><br/>
+                <input type="email" class="form-control is-valid" placeholder="Enter Mail" name="mail" required ><br/>
+                <label for="diachi"><b>Address</label> <br/>                
+                <textarea type="text" class="form-control is-valid"placeholder="Enter Address" name="Address" rows="2" cols="50" required></textarea><br/>
+                <label for="Tell"><b>Tell</b></label> <br/> 
+                <input type="text" class="form-control is-valid" placeholder="Enter Tell Of You"   name="tell" required>  <br/> 
+                <label for="data-number"><b>Date</b></label><br/>
+                <input type="date" class="form-control is-valid"name="date" required>  <br/>      
+                <label  for="gender"><b>Gender</b></label> <br/>     
+                <form  action="/action_page.php" >
+                  <input  type="checkbox" name="vehicle1" value="Bike" >Male &nbsp;
+                  <input   type="checkbox" name="vehicle2" value="Car" > Female &nbsp;
+                  <input   type="checkbox" name="vehicle3" value="Boat">Others
+              
+                </form><br/>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label><br/>
+                <button  id="submit1" onclick="dangky" type="submit">Login</button>
+                <button id="reset1" type="reset">Reset</button>
+                
+              </div>
+          
+              <div class="container" style="background-color:"#000">
+           
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal 
+          
+          var modal = document.getElementById('id02');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+
+     </body1>   
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="home.html">JobPortal</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="home.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+   <!--dan nhập and dăng ký-->         
+            <button onclick="document.getElementById('id01').style.display='block'"class=" btn btn-danger navbar-btn" style="width:auto;">Post a Job</button>&nbsp;
+            <button onclick="document.getElementById('id02').style.display='block'"class=" btn btn-danger navbar-btn" style="width:auto;">Want a Job</button>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <!-- fail ảnh -.........................................................--> 
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/nhatuyendung.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-xl-10 ftco-animate mb-5 pb-5" data-scrollax=" properties: { translateY: '70%' }">
+          	<p class="mb-4 mt-5 pt-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
+            <h1 class="mb-5" data-scrollax="properties: { translateY: '20%', opacity: 1.6 }">Your Dream <br><span>Job is Waiting</span></h1>
+          </div>
+        </div>
+      </div>
+    </div><br/>
+    
+    <section class="ftco-section ftco-counter">
+      	<div class="container">
+         <div class="container">
+           <!-- noi dung về tuyển dụng baeng chử-->
+              <h2>Things you need to know</h2>
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Things to avoid</button> <!--nhúng điều cần tranh khi đi phỏng vấn -->
+            <div id="demo" class="collapse">
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">1.Do not understand your company
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <a>During the job interview, you will be asked to ask the employer a few questions.
+                       This is the perfect opportunity for you to learn more about the position of the job you are applying for;
+                        as well as know more about the actual operations of the business. However,
+                         you will easily lose points when asking about something that you have not really thoroughly investigated before.
+                        Therefore, before the interview, you need to read the basic information about the company on the website first,
+                         learn the mission, mission of the organization and carefully read the specific description of the job being applied.
+                          If you want to be better prepared, you can read the recent news of the company to get the situation and exchange
+                           more with employers during the interview process.</a>                                     
+                  </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">2.Go late
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <a>
+                         
+                          Punctuality is important for any employer.
+                          If you are late for the interview, the employer will evaluate you not to appreciate the interview.
+                           How can they believe you will work on time in the following days?
+                          To avoid this error, you should see the road map to the interview location at least one day in advance.
+                           You can also use the map and find your way to make sure you don't get lost. Ideally,
+                            before the interview you should take the time to get to the interview site first to see how long it will take to get there.
+                             Calibrate backup time, ensure adequate fuel to avoid running out of gas in the middle of the road!</a>                                         
+                    </ul>
+                  </div><div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">3.Do not dress appropriately for the interview
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+    
+                       <a>
+                          When you and many people always assume one thing, when you go to the interview, you have to dress politely, appropriately,
+                         There are still people interviewing with wrinkled costumes, torn jeans or wet hair.
+                            To make a good impression, before the interview, your clothes intended to be worn should be kept clean, flat,
+                           Be polite and fit with your position. Avoid using perfume too harsh or inappropriate - that will be your minus point.</a>
+                        
+                      </ul>
+                    </div><div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"> Have a negative attitude in the interview
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      
+                         <a>Employers are always eager to work with positive people and teammates who work effectively. Even if you are asked to answer the reason why you left the nearest job, do not add any negative comments in your answer. This will make you worse.
+                            During the interview process, avoid this complaint about your former boss, co-worker or previous work environment too much. Employers will definitely not expect to hear you talk about them like that to another employer when you are not working there anymore.
+                             Reply stereotyped     
+                            Nothing is wrong when preparing for a job interview. However, you should not prepare too much for common questions because employers always want you to express your true self, not your reading an article and finding the answer. best for the question: "What is your weakness?"
+                            During the interview, use your own stories, related to the work you do to make your answers more colorful.</a>
+                          
+                        </ul>
+                      </div>
+
+          
+                
+          </div>
+          <!--phân Vudio .............................................................     -->
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">VideoDemo </button>
+          <div id="demo1" class="collapse">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">  Video Demo1
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                  <a><<iframe width="560" height="315" src="https://www.youtube.com/embed/1qwR-4oYMTc"
+                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                     allowfullscreen></iframe></a>                                     
+                </ul>
+              </div>
+              <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Video Demo2
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <a>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yBtMwyQFXwA" frameborder="0" allow="accelerometer;
+                         autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>                                         
+                  </ul>
+                </div>            
+        </div>
+          <!-- end -->
+        </div>
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	
+            <h2 class="mb-4"><span>Categories work wating for you</span> </h2>
+            <span class="subheading">........</span>
+          </div>
+        </div>
+        
+        
+          <!--thanh tim kiem con việt theo tiêu chí ............................-->
+       <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+        <form action="#" class="search-job">
+          <div class="row">            
+            <div class="col-md">
+              <div class="form-group">
+                <div class="form-field">
+                  <div class="select-wrap">
+                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                    <select name="" id="" class="form-control">
+                      <option>All</option>
+                      <option >Web Development</option>
+                      <option >Graphic Designer</option>
+                      <option >Multimedia</option>
+                      <option >Advertising</option>
+                      <option >Education </option>
+                      <option >English</option>
+                      <option >Social Media</option>
+                      <option >Writing</option>
+                      <option >PHP Programming</option>
+                      <option >Project Management</option>
+                      <option >Finance Management</option>
+                      <option >Office &amp; Admin</option>
+                      <option >Web Designer</option>
+                      <option >Customer Service</option>
+                      <option >Marketing</option>
+                      <option >Software Development </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md">
+                <div class="form-group">
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                        <option >Partime</option>
+                        <option >Full Time</option>
+                        <option >Freelance</option>
+                        <option >Internship</option>
+                        <option >Temporary </option>                       
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>                     
+            <div class="col-md">
+              <div class="form-group">
+                <div class="form-field">
+                  <input type="submit" value="Search" class="form-control btn btn-primary">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+  	</div>
+    </section>
+<section class="course-section spad">
+		<div class="container">
+			<div class="section-title mb-0">
+				<h2>Maybe you need it ...</h2>
+				
+			</div>
+		</div>
+	</section>
+		<section class="ftco-section bg-light">
+			<div class="container">			
+				<div class="row">
+          	<div class="col-md-12 ftco-animate">
+
+                <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+    
+                  <div class="mb-4 mb-md-0 mr-5">
+                    <div class="job-post-item-header d-flex align-items-center">
+                      <h2 class="mr-3 text-black h3">Graphic Designert</h2>
+                      <div class="badge-wrap">
+                          <span class="bg-danger text-white badge py-2 px-3">Partime</span>
+                      </div>
+                    </div>
+                    <div class="job-post-item-body d-block d-md-flex">
+                      <div class="mr-3"><span class="icon-layers"></span> <a href="#">High school</a></div>
+                      <div><span class="icon-my_location"></span> <span> CanTho City,Viet Nam</span></div>
+                    </div>
+                  </div>
+    
+                  <div class="ml-auto d-flex">
+                    <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                    <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                      <span class="icon-heart"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+         <div class="col-md-12 ftco-animate">
+    
+                <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+    
+                  <div class="mb-4 mb-md-0 mr-5">
+                    <div class="job-post-item-header d-flex align-items-center">
+                      <h2 class="mr-3 text-black h3">Graphic Designert</h2>
+                      <div class="badge-wrap">
+                          <span class="bg-danger text-white badge py-2 px-3">Internship</span>
+                      </div>
+                    </div>
+                    <div class="job-post-item-body d-block d-md-flex">
+                      <div class="mr-3"><span class="icon-layers"></span> <a href="#">Cantho University</a></div>
+                      <div><span class="icon-my_location"></span> <span>Can Tho City, Viet Nam </span></div>
+                    </div>
+                  </div>
+    
+                  <div class="ml-auto d-flex">
+                    <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                    <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                      <span class="icon-heart"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+           <div class="col-md-12 ftco-animate">
+    
+                <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+    
+                  <div class="mb-4 mb-md-0 mr-5">
+                    <div class="job-post-item-header d-flex align-items-center">
+                      <h2 class="mr-3 text-black h3">Multimedia</h2>
+                      <div class="badge-wrap">
+                          <span class="bg-danger text-white badge py-2 px-3">Partime</span>
+                      </div>
+                    </div>
+                    <div class="job-post-item-body d-block d-md-flex">
+                      <div class="mr-3"><span class="icon-layers"></span> <a href="#">Cusc Cantho</a></div>
+                      <div><span class="icon-my_location"></span> <span>Can Tho City, Viet Nam</span></div>
+                    </div>
+                  </div>
+    
+                  <div class="ml-auto d-flex">
+                    <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                    <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                      <span class="icon-heart"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+             <div class="col-md-12 ftco-animate">
+    
+                <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+    
+                  <div class="mb-4 mb-md-0 mr-5">
+                    <div class="job-post-item-header d-flex align-items-center">
+                      <h2 class="mr-3 text-black h3">Advertising</h2>
+                      <div class="badge-wrap">
+                          <span class="bg-danger text-white badge py-2 px-3">Full Time</span>
+                      </div>
+                    </div>
+                    <div class="job-post-item-body d-block d-md-flex">
+                      <div class="mr-3"><span class="icon-layers"></span> <a href="#">Fpt University.</a></div>
+                      <div><span class="icon-my_location"></span> <span>HCM Cty , VN</span></div>
+                    </div>
+                  </div>
+    
+                  <div class="ml-auto d-flex">
+                    <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                    <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                      <span class="icon-heart"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <div class="col-md-12 ftco-animate">
+    
+                <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+    
+                  <div class="mb-4 mb-md-0 mr-5">
+                    <div class="job-post-item-header d-flex align-items-center">
+                      <h2 class="mr-3 text-black h3">Advertising</h2>
+                      <div class="badge-wrap">
+                          <span class="bg-danger text-white badge py-2 px-3">Internship</span>
+                      </div>
+                    </div>
+                    <div class="job-post-item-body d-block d-md-flex">
+                      <div class="mr-3"><span class="icon-layers"></span> <a href="#">fpt Shop</a></div>
+                      <div><span class="icon-my_location"></span> <span>Hanoi City, VN</span></div>
+                    </div>
+                  </div>
+    
+                  <div class="ml-auto d-flex">
+                    <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                    <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                      <span class="icon-heart"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <div class="col-md-12 ftco-animate">
+    
+                <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+    
+                  <div class="mb-4 mb-md-0 mr-5">
+                    <div class="job-post-item-header d-flex align-items-center">
+                      <h2 class="mr-3 text-black h3">Education</h2>
+                      <div class="badge-wrap">
+                          <span class="bg-danger text-white badge py-2 px-3">Full Time</span>
+                      </div>
+                    </div>
+                    <div class="job-post-item-body d-block d-md-flex">
+                      <div class="mr-3"><span class="icon-layers"></span> <a href="#">Thong Thay Storo</a></div>
+                      <div><span class="icon-my_location"></span> <span>Tokyo City, japan</span></div>
+                    </div>
+                  </div>
+    
+                  <div class="ml-auto d-flex">
+                    <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                    <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                      <span class="icon-heart"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+
+           <div class="col-md-12 ftco-animate">
+           <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+              <div class="mb-4 mb-md-0 mr-5">
+               <div class="job-post-item-header d-flex align-items-center">
+                 <h2 class="mr-3 text-black h4">Open Source Interactive Developer</h2>
+                 <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Freelance</span>
+                 </div>
+               </div>
+               <div class="job-post-item-body d-block d-md-flex">
+                 <div class="mr-3"><span class="bg-primary text-white badge py-2 px-3"></span> <a href="#">New York Times</a></div>
+                 <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+               </div>
+              </div>
+              
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+           </div>
+         </div> 
+         <!-- end -->
+          <div class="col-md-12 ftco-animate">
+           <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+              <div class="mb-4 mb-md-0 mr-5">
+               <div class="job-post-item-header d-flex align-items-center">
+                 <h2 class="mr-3 text-black h4">Open Source Interactive Developer</h2>
+                 <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Temporary</span>
+                 </div>
+               </div>
+               <div class="job-post-item-body d-block d-md-flex">
+                 <div class="mr-3"><span class="bg-primary text-white badge py-2 px-3"></span> <a href="#">New York Times</a></div>
+                 <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+               </div>
+              </div>
+              
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+           </div>
+         </div>
+          <!-- end -->
+					<div class="col-md-12 ftco-animate">
+
+            <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+              <div class="mb-4 mb-md-0 mr-5">
+                <div class="job-post-item-header d-flex align-items-center">
+                  <h2 class="mr-3 text-black h3">Frontend Development</h2>
+                  <div class="badge-wrap">
+                      <span class="bg-danger text-white badge py-2 px-3">Partime</span>
+                  </div>
+                </div>
+                <div class="job-post-item-body d-block d-md-flex">
+                  <div class="mr-3"><span class="bg-primary text-white badge py-2 px-3"></span> <a href="#">Facebook, Inc.</a></div>
+                  <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+                </div>
+              </div>
+
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+          <div class="col-md-12 ftco-animate">
+						<div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+						  <div class="mb-4 mb-md-0 mr-5">
+						   <div class="job-post-item-header d-flex align-items-center">
+						     <h2 class="mr-3 text-black h4">Full Stack Developer</h2>
+						     <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Full Time</span>
+						     </div>
+						   </div>
+						   <div class="job-post-item-body d-block d-md-flex">
+						     <div class="mr-3"><span class="icon-layers"></span> <a href="#">Google, Inc.</a></div>
+						     <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+						   </div>
+						  </div>
+
+						  <div class="ml-auto d-flex">
+						  	<a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-danger rounded-circle btn-favorite d-flex align-items-center">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+
+						</div>
+          </div> 
+          <!-- end -->
+          <div class="col-md-12 ftco-animate">
+
+              <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+   
+                 <div class="mb-4 mb-md-0 mr-5">
+                  <div class="job-post-item-header d-flex align-items-center">
+                    <h2 class="mr-3 text-black h4">Frontend Development</h2>
+                    <div class="badge-wrap">
+                        <span class="bg-danger text-white badge py-2 px-3">Internship</span>
+                    </div>
+                  </div>
+                  <div class="job-post-item-body d-block d-md-flex">
+                    <div class="mr-3"><span class="icon-layers"></span> <a href="#">Facebook, Inc.</a></div>
+                    <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+                  </div>
+                 </div>
+   
+                 <div class="ml-auto d-flex">
+                   <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                   <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                     <span class="icon-heart"></span>
+                   </a>
+                 </div>
+              </div>
+          </div> 
+          <!-- end -->
+          <div class="col-md-12 ftco-animate">
+           <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+              <div class="mb-4 mb-md-0 mr-5">
+               <div class="job-post-item-header d-flex align-items-center">
+                 <h2 class="mr-3 text-black h4">Open Source Interactive Developer</h2>
+                 <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Freelance</span>
+                 </div>
+               </div>
+               <div class="job-post-item-body d-block d-md-flex">
+                 <div class="mr-3"><span class="icon-layers"></span> <a href="#">New York Times</a></div>
+                 <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+               </div>
+              </div>
+              
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+           </div>
+         </div>
+          <!-- end -->
+         <div class="col-md-12 ftco-animate">
+
+           <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+              <div class="mb-4 mb-md-0 mr-5">
+               <div class="job-post-item-header d-flex align-items-center">
+                 <h2 class="mr-3 text-black h4">Frontend Development</h2>
+                 <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Internship</span>
+                 </div>
+               </div>
+               <div class="job-post-item-body d-block d-md-flex">
+                 <div class="mr-3"><span class="icon-layers"></span> <a href="#">Facebook, Inc.</a></div>
+                 <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+               </div>
+              </div>
+
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+           </div>
+         </div> <!-- end -->
+         <div class="col-md-12 ftco-animate">
+           <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+              <div class="mb-4 mb-md-0 mr-5">
+               <div class="job-post-item-header d-flex align-items-center">
+                 <h2 class="mr-3 text-black h4">Open Source Interactive Developer</h2>
+                 <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Temporary</span>
+                 </div>
+               </div>
+               <div class="job-post-item-body d-block d-md-flex">
+                 <div class="mr-3"><span class="icon-layers"></span> <a href="#">New York Times</a></div>
+                 <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+               </div>
+              </div>
+              
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+           </div>
+         </div> <!-- end -->
+         <div class="col-md-12 ftco-animate">
+
+            <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+              <div class="mb-4 mb-md-0 mr-5">
+                <div class="job-post-item-header d-flex align-items-center">
+                  <h2 class="mr-3 text-black h3">Frontend Development</h2>
+                  <div class="badge-wrap">
+                      <span class="bg-danger text-white badge py-2 px-3">Partime</span>
+                  </div>
+                </div>
+                <div class="job-post-item-body d-block d-md-flex">
+                  <div class="mr-3"><span class="icon-layers"></span> <a href="#">Facebook, Inc.</a></div>
+                  <div><span class="icon-map-marker"></span> <span>Western City, UK</span></div>
+                </div>
+              </div>
+
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+            </div>
+          </div><!-- end -->
+
+          <div class="col-md-12 ftco-animate">
+						<div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+
+						  <div class="mb-4 mb-md-0 mr-5">
+						   <div class="job-post-item-header d-flex align-items-center">
+						     <h2 class="mr-3 text-black h4">Full Stack Developer</h2>
+						     <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Full Time</span>
+						     </div>
+						   </div>
+						   <div class="job-post-item-body d-block d-md-flex">
+						     <div class="mr-3"><span class="icon-layers"></span> <a href="#">Google, Inc.</a></div>
+						     <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+						   </div>
+						  </div>
+
+						  <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+						</div>
+          </div> <!-- end -->        
+         <div class="col-md-12 ftco-animate">
+           <div class="job-post-item bg-white p-4 d-block d-md-flex align-items-center">
+              <div class="mb-4 mb-md-0 mr-5">
+               <div class="job-post-item-header d-flex align-items-center">
+                 <h2 class="mr-3 text-black h4">Frontend Development</h2>
+                 <div class="badge-wrap">
+                    <span class="bg-danger text-white badge py-2 px-3">Internship</span>
+                 </div>
+               </div>
+               <div class="job-post-item-body d-block d-md-flex">
+                 <div class="mr-3"><span class="icon-layers"></span> <a href="#">Facebook, Inc.</a></div>
+                 <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
+               </div>
+              </div>
+
+              <div class="ml-auto d-flex">
+                <a href="job-single.html" class="btn btn-primary py-2 mr-1">Apply Job</a>
+                <a href="#" class="btn btn-secondary rounded-circle btn-favorite d-flex align-items-center icon">
+                	<span class="icon-heart"></span>
+                </a>
+              </div>
+           </div>
+         </div> <!-- end -->
+				</div>
+				<div class="row mt-5">
+          <div class="col text-center">
+            <div class="block-27">
+              <ul>
+                <li><a href="#">&lt;</a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+			</div>
+    </section>
+    <section class="ftco-section testimony-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Testimonial</span>
+            <h2 class="mb-4"><span>Happy</span> Clients</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Interface Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">UI Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Web Developer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">System Analyst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+		<section class="ftco-section-parallax">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+              <h2>Subcribe to our Newsletter</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+              <div class="row d-flex justify-content-center mt-4 mb-4">
+                <div class="col-md-8">
+                  <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" placeholder="Enter email address">
+                      <input type="submit" value="Subscribe" class="submit px-3">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+        	<div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Employers</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">How it works</a></li>
+                <li><a href="#" class="py-2 d-block">Register</a></li>
+                <li><a href="#" class="py-2 d-block">Post a Job</a></li>
+                <li><a href="#" class="py-2 d-block">Advance Skill Search</a></li>
+                <li><a href="#" class="py-2 d-block">Recruiting Service</a></li>
+                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                <li><a href="#" class="py-2 d-block">Faq</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Workers</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">How it works</a></li>
+                <li><a href="#" class="py-2 d-block">Register</a></li>
+                <li><a href="#" class="py-2 d-block">Post Your Skills</a></li>
+                <li><a href="#" class="py-2 d-block">Job Search</a></li>
+                <li><a href="#" class="py-2 d-block">Emploer Search</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Map</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38469.74298605019!2d105.77661861264937!3d10
+                  .056471535668052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881fa301aa5d%3A0x27e73181695218ab!2zVHJ1
+                  bmcgdMOibSBDw7RuZyBuZ2jhu4cgUGjhuqduIG3hu4FtIMSQ4bqhaSBo4buNYyBD4bqnbiBUaMah!5e0!3m2!1svi!2s!4v1553490459992" 
+                  width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+ 
+    
+  </body>
+</html>
